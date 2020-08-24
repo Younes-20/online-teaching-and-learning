@@ -1,0 +1,702 @@
+.landing {
+    width: 90%;
+    margin: auto;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+.welcome {
+    width: 50%;
+    flex: 2;
+    display: block;
+}
+
+.title {
+    font-size: 40px;
+    color: #333;
+    letter-spacing: 3px;
+}
+
+.text {
+    font-size: 22px;
+    color: #333;
+    line-height: 30px;
+}
+.welcome_img{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.cover {
+    width: 500px;
+    border-radius: 20px;
+    animation: drop 1.5s ease;
+  
+}
+.enroll{
+    background-color: #00d1b2;
+    color: #fff ;
+    letter-spacing: 2px ;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2) ;
+    padding: 15px 30px;
+    outline: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 0;
+
+}
+
+.enroll:active{
+    transform: translateY(4px);
+}
+
+
+/* section B */
+.sectionB{
+       background-color: rgb(250, 249, 248);
+        text-align: center;
+       display: grid; 
+       grid-template-columns: repeat(4, 1fr);
+       grid-auto-rows: auto;  
+       grid-gap: 1rem;
+       padding: 100px 70px;
+
+   }
+
+   .card {
+       background: #fff;
+       padding: 20px 15px 2px 15px;
+       border-bottom-left-radius: 60px;
+       border-top-right-radius: 60px; 
+   }
+   .card:hover{
+        transform: translateY(-.6%);
+        box-shadow: 0 3rem 6rem rgba(0, 0, 0, .2);
+   }
+   
+   @keyframes drop{
+       0%{
+           opacity: 0;
+           transform: translateY(-90%);
+       }
+       100%{
+           opacity: 1;
+           transform: translateY(0);
+       }
+   }
+  
+.card h4{
+    color: #000;
+     letter-spacing: 2px;
+     font-size: 1.2em;
+     margin: 10px auto;
+}
+
+.card p {
+    color: #333;
+    font-size: 18px;
+    line-height: 30px;
+    
+}
+.icons{
+    width: 70px;
+}
+
+/* section C */
+.sectionC{
+    background-color: #fff;
+    display: flex;
+    padding:90px 70px;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+   background-color: rgb(250, 249, 248);
+   width: 50%; 
+   margin-right: 50px;
+   padding: 100px 30px;
+   text-align: center;
+   border-radius: 30px;
+   
+}
+.content:hover{
+    transform: translateY(-.6%);
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, .2);
+
+}
+.content h2{
+ letter-spacing: 2px;
+}
+.content p {
+    color: #333;
+    font-size: 18px;
+    line-height: 30px; color: #333;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.con_img
+{
+	width: 300px;
+	position: relative;
+	overflow: hidden;
+}
+.con_img img {
+  width: 300px;
+   justify-self: end;
+   border-radius: 10px;
+   filter: grayscale(100%);
+    transition: 2s;
+}
+
+.con_img:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 180%;
+	height: 100%;
+	width: 100%;
+    background: rgba(255,255,255,.3);
+	z-index: 1;
+	transform: skew(45deg);
+	transition: .6s;
+}
+
+.con_img:hover:before
+{
+	left: -180%;
+}
+.con_img:hover img
+{
+    filter: grayscale(0%);
+	transform: scale(1.1);
+}
+
+
+/* Section D */
+.sectionD{
+    background-color: rgb(250, 249, 248);
+    padding-top:  40px ;
+    padding-bottom: 90px;
+     
+}
+.description {
+    text-align: center;
+   margin-bottom: 30px;
+}
+.description h2{
+    letter-spacing: 3px;
+    animation: scroll 2s ease-in-out;
+}
+.description span {
+    color: #333 !important;
+}
+.course {
+    display: grid;
+     grid-template-columns: repeat(3, 300px);
+    grid-auto-rows: auto;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.course img {
+    width: 300px;
+    height: 200px;
+  
+}
+.container1{
+background-color: #fff;
+width: 100;
+padding-bottom: 10px;
+cursor: pointer;
+position: relative;
+box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.container1 p{
+    color: #6d5d5d;
+    font-size: 15px;
+    padding: 0px 15px;
+}
+.container1 h5{
+    padding: 10px 15px;
+    font-size: 20px;
+    margin: 0;
+   
+}
+
+.container1 small{
+    color: rgb(36, 184, 36);
+    padding: 20px 15px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: darkturquoise;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  .container1:hover .overlay {
+    width: 100%;
+  }
+  
+  .midBtn {
+    color: #333;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+  }
+.midBtn:hover{
+    background-color: #333;
+    color: #fff;
+}
+
+/* Section E */
+.sectionE{
+    background-color: #fff;
+    padding: 100px 0px;
+    text-align: center;
+}
+.card_number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sectionE h2{
+    margin-top: -40px;
+    margin-bottom: 40px;
+}
+.number{
+    margin: 0 30px;
+    background-color: rgb(250, 249, 248); 
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    transition: transform .2s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.number:hover{
+  transform: scale(1.3);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+}
+.number span {
+    color: #333;
+    font-size: 30px;
+}
+.number img {
+    width: 70px;
+}
+
+/* Section F */
+.sectionF{
+   
+    background-color: rgb(250, 249, 248); 
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.sectionF h1{
+    font-size: 50px;
+    margin: 0;
+    letter-spacing: 3px;
+}
+.phone{
+    height: 500px;
+    width: 260px;
+    border: 6px solid #333;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, .3);
+    margin-right: 100px;
+    background-color: #037272;
+    
+    
+}
+.logo{
+    width: 100px;
+    margin-top: -50px;
+}
+.phone span {
+    font-style: italic;
+    font-weight: 800;
+   color: #000;
+   letter-spacing: 2px;
+   margin-top: 10px;
+   font-size: 25px;
+   color: #fff;
+}
+.phone_text {
+margin-top: -100px;
+width: 35%;
+}
+.phone_text p{
+    color: rgb(33, 189, 176); 
+    font-size: 20px;
+    font-weight: 600;
+}
+.phone_text div{
+    color: #333;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 20px 0;
+}
+.phone_text button{
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 18px;
+    background-color: #00d1b2;
+    outline: 0;
+    border: 0;
+    margin-right: 20px;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+button:active{
+    transform: translateY(4px);
+}
+.phone_text i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+  @media (max-width: 1000px){
+    .landing {
+        width: 90%;
+        margin: auto;
+        height: 550px;
+        display: flex;
+        align-items: center;
+    }
+    .welcome {
+        width: 50%;
+        flex: 2;
+    }
+    .cover {
+        width: 400px;
+        border-radius: 20px;
+    } 
+    .title {
+        font-size: 35px;
+    }
+    /* section B */
+.sectionB{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 3rem;
+    padding-top: 80px;
+
+}
+
+.card {
+ padding-bottom: 10px;
+ /* width: 300px; */
+ padding-left: 5px;
+ padding-right: 5px;
+ border-bottom-left-radius: 40px;
+ border-top-right-radius: 40px;
+}
+
+/* section C */
+.sectionC{
+    display: flex;
+    padding:90px 0px;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+   background-color: rgb(250, 249, 248);
+   width: 50%; 
+   margin-right: 50px;
+   padding: 60px 30px;
+}
+
+.content p {
+    color: #333;
+    font-size: 18px;
+    line-height: 30px; color: #333;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.con_img img {
+  width: 280px;
+} 
+.course {
+    display: grid;
+     grid-template-columns: repeat(2, 300px);
+    grid-auto-rows: auto;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.number{
+    margin: 0 20px;
+    background-color: rgb(250, 249, 248); 
+}
+/* Section F */
+.sectionF{
+
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.sectionF h1{
+    font-size: 50px;
+    margin: 0;
+    letter-spacing: 3px;
+}
+.phone_text{
+    margin-top: 20px;
+}
+.phone_text button{
+    margin-top: 10px;
+}
+.phone{
+    margin-right: 80px;
+    
+}
+ }
+ @media (max-width: 800px){
+     .landing{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        height: 600px;
+        padding-bottom: 70px;
+     }
+     .welcome{
+          text-align: center;
+          padding-bottom: 20px;
+     }
+     
+     .text{
+         width: 100%;
+         text-align: center;
+         font-size: 30px;
+         line-height: 40px;
+     }
+    
+     .cover{
+         width: 90%;
+         margin: 1px auto;
+     }
+    
+ }
+
+ @media (max-width: 872px){
+     
+    .welcome {
+        width: 60%;
+        flex: 2;
+    }
+    .cover {
+        width: 300px;
+        border-radius: 20px;
+    } 
+
+    .phone_text button{
+        margin-top: 12px;
+    }
+    .phone_text {
+        margin-top: -30px;
+        width: 50%;
+        }
+        .sectionF{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ }
+ 
+ @media (max-width: 800px){
+    
+    .title{
+        display: none;
+    }
+    .enroll{
+        padding: 10px 20px;
+        font-size: 15px;
+        border-radius: 4px;
+    }
+   
+    
+ }
+
+ @media (max-width: 700px){
+     
+    .sectionB{
+        background-color: rgb(250, 249, 248);
+         text-align: center;
+         display: grid;
+        grid-template-columns: repeat(1, 300px);
+        grid-auto-rows: auto;
+        grid-gap: 2rem;
+        padding: 100px 100px;
+        justify-content: center;
+        width: 100%;
+    }
+ 
+    .card {
+        background: #fff;
+        padding: 20px 15px;
+        border-bottom-left-radius: 60px;
+        border-top-right-radius: 60px;
+        
+    }
+   /* section C */
+.sectionC{
+    background-color: #eee;
+    display: flex;
+    padding: 60px 50px ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.content{
+   background-color: rgb(250, 249, 248);
+   width: 90%; 
+   padding: 30px 30px;
+   margin: 30px auto;
+}
+.content h2{
+ letter-spacing: 1px;
+}
+.content p {
+    color: #333;
+    font-size: 18px;
+    line-height: 30px; color: #333;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.con_img img {
+  display: none;
+  position: absolute;
+}
+.course {
+    display: grid;
+     grid-template-columns: repeat(1, 300px);
+    grid-auto-rows: auto;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card_number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.sectionE h2{
+    margin-top: -40px;
+    margin-bottom: 40px;
+}
+.number{
+    margin-bottom: 30px;
+   
+}
+    /* Section F */
+.sectionF{
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sectionF h1{
+    font-size: 30px;
+    margin: 0px auto;
+    letter-spacing: 3px;
+}
+.phone{
+    height: 500px;
+    width: 260px;
+    border: 5px solid #333;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   margin: 20px auto;
+}
+.logo{
+    width: 100px;
+}
+.phone span {
+    font-style: italic;
+    font-weight: 800;
+   color: #000;
+   letter-spacing: 2px;
+   margin-top: 10px;
+   font-size: 25px;
+   color: #fff;
+}
+.phone_text {
+margin: 20px auto ;
+width: 50%;
+}
+.phone_text p{
+    color: rgb(33, 189, 176); 
+    font-size: 20px;
+    font-weight: 600;
+}
+.phone_text div{
+    color: #333;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 20px auto;
+}
+  }
+
+  @media (max-width: 500px){
+    .content{
+       padding: 20px 20px;
+       text-align: left;
+    }
+    .content h2{
+        font-size: 24px;
+    }
+  }
+
+ 

@@ -1,0 +1,171 @@
+.text_about{
+   
+    background-color: #eee;
+    color: #000;
+    text-align: center;
+    padding: 30px 80px;
+    border-bottom: 2px solid #ccc;
+   width: 100%;
+    
+}
+
+.text_about h1{
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.text_about p {
+    font-size: 20px;
+    line-height: 35px;
+}
+.text_about span{
+     color: darkcyan;
+}
+.text_about a {
+    color: darkcyan;
+    text-decoration: none;
+}
+.text_about a:hover{
+    color: #00d1b2;
+    border-color: #00d1b2;
+}
+.section1{
+   
+    padding: 20px 100px 60px 100px;
+    text-align: center;
+    width: 100%;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    justify-items: center;
+    align-items: center;
+   
+}
+.meet{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.profile{
+    width: 100%;
+}
+ .section1 h2{
+     margin-bottom: 40px;
+ }
+  .content h5{
+    color: grey;
+    font-size: 15px;
+  }
+
+  .content a {
+      font-size: 22px;
+      margin-right: 10px;
+      cursor: pointer;
+    
+  }
+  .content a i{
+    transition: 0.4s linear;
+}
+  .content i:hover{
+      color: #00d1b2;
+      transform: scale(1.4);
+  }
+
+  /* section2 */
+  .section2{
+      background-color: #eee;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 100px 50px;
+      width: 100%;
+      
+  }
+  .reach{
+      text-align: center;
+      margin: 0px auto;
+  }
+  .reach span {
+      font-size: 40px;
+      padding-bottom: 10px;
+      display: inline-block;
+      color: #00d1b2 !important;
+  }
+  .reach h5{
+      font-size: 20px;
+      margin: 0;
+      letter-spacing: 2px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  /* media query */
+
+@media (max-width: 900px){
+    .section2{
+       flex-direction: column;
+       padding: 50px 0px;
+    }
+    .reach{
+        text-align: center;
+        margin: 15px auto;
+    }
+}
+@media (max-width: 750px){
+    .wrapper{
+        grid-template-columns: repeat(2, 1fr);
+       
+    }
+    .text_about{
+      
+        text-align: left;
+        padding: 30px 50px;
+      
+    }
+}
+
+@media (max-width: 600px){
+    .wrapper{
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+   
+    
+    .text_about h1{
+        font-size: 1.5em;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    .text_about p {
+        font-size: 1em;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 500px){
+    .text_about{
+        padding: 20px 20px;
+    }
+}
+  
